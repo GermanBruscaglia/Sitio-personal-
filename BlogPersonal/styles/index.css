@@ -1,0 +1,286 @@
+:root{
+    --first-color: #1162FF;
+}
+
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body{
+      font-family: sans-serif;
+      background-color: black;
+  }
+  img{
+    width: 100%;
+    height: auto;
+  }
+
+  .header{
+    background-color: var(--first-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 3rem;
+    position: fixed;
+    top: 0;
+    min-width: 100%;
+  }
+   .menu{
+    display: flex;
+    justify-content: space-evenly;
+  } 
+  .menu a{
+    color: white;
+    text-decoration: none;
+}
+.menu a:hover{
+    color: rgb(200, 200, 200);
+}
+
+  .main-image{
+    background-image: url("../Images/header.jpg");
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .content-main-image{
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    color: white;
+    font-size: 2.2rem;
+    width: 100%;
+  }
+
+
+  .main{
+    background-image: url(../Images/sobremi.jpg);
+    background-attachment: fixed;
+    height: auto;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    margin-top: 2rem;
+  }
+
+  .about-me{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    }
+  .about-me h3{
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+  .about-me p{
+    font-size: 1.2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+
+
+
+  .projects{
+   text-align: center;
+   margin-top: 3rem;
+   background-image: url(../Images/fondo-proyectos.jpg);
+   background-attachment: fixed;
+   height: auto;
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   color: white;
+  }
+  .projects h3{
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .content-project{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  .projet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .projet ul {
+    text-align: left;
+  }
+  .projet h4 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+  }
+  .projet a {
+    color: white;
+    text-decoration: none;
+    background-color: var(--first-color);
+    padding: .5rem;
+    margin-bottom: 2rem;
+  }
+  .projet a:hover {
+    background-color: #003ebb;
+  }
+
+
+  .studies{
+    background-image: url(../Images/fondo-estudios.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .studie{
+    background-color: rgba(0, 0, 0, 0.6);
+    height: auto;
+    text-align: center;
+    color: white;
+    width: 45%;
+  }
+  .studie h4 {
+    text-decoration: underline;
+    margin-bottom: 0;
+  }
+  .studie ul{
+    text-align: left;
+  }
+  .list{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+
+  .contact {
+    background-image: url(../Images/fondo-contacto.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content:  center;
+  }
+  .contact  .contain-contact{
+    border: medium solid white;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+  }
+
+  .contact ul {
+    list-style: none;
+    line-height: 3rem;
+  }
+  .contact a{
+    text-decoration: none;
+    color: white;
+  }
+  .contact a:hover{
+    color: rgb(200, 200, 200);
+  }
+
+
+  .footer {
+    background-color: var(--first-color);
+    color: white;
+    text-align: center;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  .footer a {
+    color: white;
+    text-decoration: none;
+  }
+  .footer a:hover {
+    color: rgb(200, 200, 200);
+  }
+
+
+  @media (max-width: 768px){
+.main-image{
+    height: 100vh;
+    margin-top:2rem;
+  }
+  .content-main-image{
+    font-size: 1.5rem;
+  }
+
+  .main{
+    height: auto;
+  }
+
+  .content-project{
+  flex-direction: column;
+  align-items: center;
+  }
+
+  .projet{
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+  .projet h4 {
+    font-size: 1.1rem;
+    text-decoration: underline;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+  }
+
+  .studies{
+  flex-direction: column;
+  align-items: center;
+  }
+  .studie{
+    width: 90%;
+  }
+
+  .contact {
+    height: auto;
+  }
+  }
+
+  @media (max-width: 480px){
+    .content-main-image{
+      font-size: 1rem;
+    }
+    .contact ul {
+      text-align: left;
+      font-size: 1rem;
+    }
+  }
